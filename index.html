@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <div class="nomes">
+        <input type="text" id="eu" placeholder="Digite seu nome">
+        <input type="text" id="conjugue" placeholder="Nome do seu amigo">
+        <input type="submit" id="submit" onclick="enviar()">
+        <h1></h1>
+        <br>
+        <h2></h2>
+        <hr>
+    </div>
+    <img  class="jogo"style="display: none;" src="https://1.bp.blogspot.com/-2QgMLMwS7mQ/XTNf01D-ruI/AAAAAAAASGI/Quq-425AK4Mo1n9yuO7UgGpPJXxra5gBACLcBGAs/s1600/Ohe9qqO.png">
+    <img class="praça" style="display: none;" src="https://media2.giphy.com/media/55rR3YvG8HBbIuCGr5/200.gif">
+    <h3 style="display: none;">kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</h3>
+    <h3 style="display: none;">me perdoa???</h3>
+    <a style="display: none;" href="https://www.dicio.com.br/otario/">Presente pra tu </a>
+    <iframe src="http://www.staggeringbeauty.com/" style="border: 1px inset #ddd" width="498" height="598"></iframe>
+    <script>
+
+       
+        function enviar(){
+            const Qntd1 = document.getElementById('eu').value;
+            const Qntd2 = document.getElementById('conjugue').value;
+
+            const values =  Qntd1.length; 
+            const values2 =  Qntd2.length; 
+
+            if(values == 0 || values2 == 0){
+             document.querySelector("h1").innerHTML="preenche os dois campos, animal"
+                }
+            else if(values != 0 || values2 != 0){
+            document.querySelector("h1").innerHTML="Man, essa pessoa ai, tal de " + Qntd2 + " é fêa. "  + "o/a " + Qntd1 + " que eu conheço não anda com gente fêa";
+            setTimeout(() => {
+                document.querySelector("h2").innerHTML="bora brincar aqui, pra distrair, tu começar";
+
+                
+            }, 3000);
+            setTimeout(() => {
+                document.querySelector(".jogo").style.display="";
+
+                
+            }, 3500);
+        
+            }
+        }
+
+        const jogo = document.querySelector("img").addEventListener('click', function(){
+             alert("marrapaz, tu nem é velha, vai jogar nada nao, pra deixar de ser besta");
+             document.querySelector(".jogo").style.display="none";
+             document.querySelector(".praça").style.display="";
+             document.querySelector("h3").style.display="";
+             document.querySelector("a").style.display="";
+
+
+
+
+        })
+
+
+
+      /*   var x = document.getElementById('submit').addEventListener('click', function () {
+            let b = document.getElementById("eu").value;
+           // console.log(b)
+            return b;
+        }); 
+
+        var y = document.getElementById('submit').addEventListener('click', function () {
+            let c = document.getElementById("conjugue").value;
+            return c;
+        }); 
+        console.log(y);
+
+        if(x == undefined){
+            document.querySelector("h1").innerHTML="";
+
+        }
+        else if(x != undefined){
+            document.querySelector("h1").innerHTML=x +"";
+
+        }
+        */
+
+    </script>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .nomes{
+            margin-top: 20px;
+            margin-left: 20px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .nomes input{
+            padding: 10px;
+        }
+        h3{
+            font-size: 50px;
+        }
+
+
+    </style>
+    
+</body>
+</html>
